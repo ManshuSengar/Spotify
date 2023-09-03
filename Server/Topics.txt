@@ -14,3 +14,28 @@ Creating Custom Middleware
 
 Node js file system CURD operations on files
 
+
+n = 10000000000 / 2 = 500000;
+
+[
+    {
+        title:"newSong"
+    },
+    {
+        title:"song"
+    }
+]
+
+[1,3,6,9,25,1,4,68,..........., n] = 9;
+
+
+
+[1,1,3,4,6,9,25,68] = 9;
+
+8 / 2 = 7 
+
+[1,1,3,4,6] [9,25,68] = 9
+
+9 === 9
+
+0  + 6 = 6

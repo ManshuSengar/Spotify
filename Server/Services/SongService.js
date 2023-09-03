@@ -1,12 +1,12 @@
-import SongModel from '../Models/Songs.js'
+import songModel from '../Models/Songs.js'
 
 export class SongService {
     async getAllSongs() {
-        return await SongModel.find({})
+        return await songModel.find({})
     }
 
     async createSong(data) {
-        const newSong = new SongModel(data);
+        const newSong = new songModel(data);
         await newSong.save()
         return newSong
     }

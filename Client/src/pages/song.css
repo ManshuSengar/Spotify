@@ -1,0 +1,40 @@
+.song-top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.song-information {
+  background: #1a1a17;
+  padding: 1rem 2rem;
+}
+.song-login-wrapper {
+  width: 40%;
+  margin: 1.5rem 0;
+  background: #0395fc;
+  padding: 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.sign-up {
+  color: #ffffff;
+}
+
+.song-login-buttons {
+  margin-left: auto;
+  width: max-content;
+}
+.track-head {
+  font-size: 14px;
+  color: #818181;
+  font-weight: 300;
+}
+.track-artist {
+  font-size: 20px;
+  margin-top: 8px;
+  color: #fff;
+}

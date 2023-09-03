@@ -14,4 +14,6 @@ const SongSchema = mongoose.Schema({
     },
 })
 
-export default model("Song", SongSchema)
+export default model("abcs", SongSchema)
+
+

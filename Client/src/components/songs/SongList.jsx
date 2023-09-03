@@ -89,21 +89,21 @@ const SongList = ({ show_song_list = true }) => {
                     </div>
                 }
                 <div className="songs-container">
-                    <Song />
-                    <Song />
-                    <Song />
-                    <Song />
-                    <Song />
-                    <Song />
-                    <Song />
-                    <Song />
-                    <Song />
-                    <Song />
-                    <Song />
-                    <Song />
-                    <Song />
-                    <Song />
-                    <Song />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@ export default SongList
 
 
 // eslint-disable-next-line react/prop-types
-const Song = ({ songImage, songName, songAuthor, album }) => {
+export const SongItem = ({ songImage, songName, songAuthor, album }) => {
     const navigate = useNavigate()
 
     const [hover, setHover] = useState(false)

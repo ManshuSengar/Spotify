@@ -2,7 +2,7 @@
 import '../../pages/songdetails.css'
 
 // eslint-disable-next-line react/prop-types
-const SongHead = ({ image, type, name, description, songs, date, authorImage, author, timing, functionName }) => {
+const SongHead = ({ image, type, name, description, songs, date, authorImage, author, timing }) => {
 
 
 
@@ -36,9 +36,6 @@ const SongHead = ({ image, type, name, description, songs, date, authorImage, au
                     <p className="time">{timing || "about 11hr"}</p>
                 </div>
             </div>
-            <button onClick={() => functionName((prev) => prev + 1)} >
-                ADD
-            </button>
         </div>
     )
 }

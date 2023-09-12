@@ -5,5 +5,12 @@ REST API
 GRAPHQL API
 
 
+GRAPHQL => 200(ok) => 500(ok);
+
+query =>
+
+mutation => 
+
+resolvers =>
 
 

@@ -16,9 +16,18 @@ app.listen(port, () => {
         .then(() => console.log("connected to db"), err => console.log(err))
 });
 
-app.use('/api/song/', SongRouter)
+app.use('/api', SongRouter)
 
 
 app.get('/', (req, res) => {
     res.send("hello world")
 })
+app.get('/post', (req, res) => {
+    res.send("it's a post")
+})
+
+app.get('/song/add', (req, res) => {
+    // adding new song to db 
+})
+
+

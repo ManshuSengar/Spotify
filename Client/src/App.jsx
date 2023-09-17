@@ -8,7 +8,7 @@ const SongListingPage = lazy(() => import("./pages/SongListing"))
 const SongDetailsPage = lazy(() => import("./pages/SongDetails"))
 const ArtistAlbumPage = lazy(() => import("./pages/ArtistAlbum"))
 const AuthorDetailsPage = lazy(() => import("./pages/AuthorDetails"))
-function App() {
+ function App() {
   return (
     <Router>
       <Routes>

@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom"
 import SongCard from "../components/home/SongCard"
 import "./home.css"
+import { useEffect } from "react"
 
-const Home = ()=> {
-    return(
+const Home = () => {
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        if (!token && window.location.hash) {
+            console.log(window.location.hash)
+        }
+    }, [])
+    return (
         <main className="home">
             <section className="first-section">
                 <div className="section-top">

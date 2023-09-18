@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
 import { Suspense, lazy } from 'react'
 
@@ -8,10 +8,14 @@ const SongListingPage = lazy(() => import("./pages/SongListing"))
 const SongDetailsPage = lazy(() => import("./pages/SongDetails"))
 const ArtistAlbumPage = lazy(() => import("./pages/ArtistAlbum"))
 const AuthorDetailsPage = lazy(() => import("./pages/AuthorDetails"))
- function App() {
+function App() {
+  const token = localStorage.getItem('token')
+  if (!token)
+    return <Navigate to='/login' />
   return (
     <Router>
       <Routes>
+        <Route path='/login' />
         <Route path="/" element={<Suspense><PageLayout /></Suspense>}>
           <Route path='/' element={<Suspense><HomePage /></Suspense>} />
           <Route path='/song-listing' element={<Suspense><SongListingPage /></Suspense>} />

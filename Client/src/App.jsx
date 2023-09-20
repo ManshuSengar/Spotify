@@ -15,7 +15,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/login' />
         <Route path="/" element={<Suspense><PageLayout /></Suspense>}>
           <Route path='/' element={<Suspense><HomePage /></Suspense>} />
           <Route path='/song-listing' element={<Suspense><SongListingPage /></Suspense>} />
